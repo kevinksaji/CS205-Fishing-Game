@@ -1,7 +1,7 @@
 ### README: Merlion Mayhem
 
 #### Overview
-Merlion Mayhem is an interactive mobile application that incorporates real-time operations with engaging 2D graphics and animations. Developed by Grace Javier, Kevin Yi Kai, and Melanie, it focuses on providing a seamless and dynamic user experience through advanced technical features and user-responsive design.
+Merlion Mayhem is an interactive mobile application developed using Java that incorporates real-time operations with 2D graphics and animations.
 
 #### Technical Highlights
 - **Multi-Threading**: Utilizes multi-threading to perform parallel operations, improve responsiveness, and maintain the application's state.
