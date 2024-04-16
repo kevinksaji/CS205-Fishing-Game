@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="background_description"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back to main menu button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/play"
+    android:contentDescription="content_description"
+    android:scaleX="-1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="16dp"
+    android:onClick="onBackButtonClicked" />
+
+    <!-- To rules page button -->
+    <ImageButton
+        android:id="@+id/toRules"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/play"
+    android:contentDescription="rules_description"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp" />
+
+    <!-- Backstory Text -->
+    <TextView
+        android:id="@+id/backstoryTextView"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/textview_border"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

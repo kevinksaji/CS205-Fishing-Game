@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="menu_background"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background1" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="329dp"-->
+<!--        android:layout_height="98dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:contentDescription="title"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imageView"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imageView"-->
+<!--        app:srcCompat="@drawable/title" />-->
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/play"
+        android:contentDescription="play_button"
+        android:onClick="buttonClicked"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/help"
+        android:contentDescription="help_button"
+        android:onClick="buttonClicked"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/settings"
+        android:contentDescription="settings"
+        android:onClick="openSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shop"
+        android:contentDescription="shop"
+        android:onClick="buttonClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:scaleX="-1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.7"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/diver" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="title"
+        android:text="Merlion Mayhem"
+        android:fontFamily="@font/swimmingfont"
+        android:textSize="40sp"
+        android:textColor="#57490E"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.10"
+        app:layout_constraintHorizontal_bias="0.05"
+
+        />
+
+    <ImageView
+        android:id="@+id/merlion2"
+        android:layout_width="132sp"
+        android:layout_height="88sp"
+        android:alpha="0.5"
+        android:layout_marginBottom="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/merlion" />
+
+    <ImageView
+        android:id="@+id/merlion1"
+        android:layout_width="132sp"
+        android:layout_height="88sp"
+        android:alpha="0.5"
+        android:layout_marginBottom="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/merlion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
